@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+}
+.header {
+    height: 100px;
+    width: 100%;
+    background-color: aqua;
+    border: 2px solid black;
+}
+
+.main {
+
+    width: calc(100% - 200px - 300px);
+    border: 2px solid black;
+    background-color: blueviolet;
+    float: left;
+    /* делает пустое место слева от блока */
+    margin-left: 200px;
+height: calc(100vh - 200px);
+}
+
+.left {
+    width: 200px;
+    background-color: burlywood;
+    border: 2px solid black;
+    float: left;
+    margin-left: calc(-100% + 300px);
+    height: calc(100vh - 200px);
+}
+
+.right {
+
+    width: 300px;
+    background-color: chartreuse;
+    border: 2px solid black;
+    float: left;
+    height: calc(100vh - 200px);
+}
+
+.footer {
+    height: 100px;
+    width: 100%;
+    background-color: blue;
+    border: 2px solid black;
+}
+
+.clearfix {
+    clear: both;
+}
